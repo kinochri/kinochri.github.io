@@ -46,7 +46,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-  map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+  map.setCenter(new google.maps.LatLng(1.3354662,103.8841546));
 });
 
 function init() {
@@ -54,10 +54,10 @@ function init() {
   // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
-    zoom: 15,
+    zoom: 17,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+    center: new google.maps.LatLng(1.3354662,103.8841546), // 19 Burn Road
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
@@ -185,7 +185,7 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var image = 'img/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+  var myLatLng = new google.maps.LatLng(1.3354662,103.8841546);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
